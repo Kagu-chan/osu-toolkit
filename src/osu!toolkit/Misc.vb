@@ -69,7 +69,7 @@ Namespace osutoolkit
             Get
                 If String.IsNullOrEmpty(_songsPath) Then
                     LoadUserPreferences({"BeatmapDirectory"})
-                    _songsPath = UserPreferences("BeatmapDirectory")
+                    _songsPath = StringSetting("BeatmapDirectory")
                 End If
 
                 Return Path(_songsPath)
@@ -126,6 +126,50 @@ Namespace osutoolkit
                 End If
             Next
         End Sub
+
+        ''' <summary>
+        ''' Returns specific preloaded user preference or nothing
+        ''' </summary>
+        ''' <param name="key">setting to fetch</param>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function StringSetting(ByVal key As String) As String
+            If UserPreferences.Keys.Contains(key) Then
+                Return UserPreferences(key)
+            End If
+
+            Return Nothing
+        End Function
+
+        ''' <summary>
+        ''' Returns specific preloaded user preference  as integer or nothing
+        ''' </summary>
+        ''' <param name="key">setting to fetch</param>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function IntSetting(ByVal key As String) As Integer
+            Dim setting As String = StringSetting(key)
+            If Not String.IsNullOrEmpty(setting) Then
+                Return CInt(setting)
+            End If
+
+            Return Nothing
+        End Function
+
+        ''' <summary>
+        ''' Returns specific preloaded user preference as boolean or nothing
+        ''' </summary>
+        ''' <param name="key">setting to fetch</param>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function BoolSetting(ByVal key As String) As Boolean
+            Dim setting As String = StringSetting(key)
+            If Not String.IsNullOrEmpty(setting) Then
+                Return setting = "1"
+            End If
+
+            Return Nothing
+        End Function
 
         ''' <summary>
         ''' Returns users logon name (windows)

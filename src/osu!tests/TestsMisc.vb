@@ -55,6 +55,24 @@ Namespace osutest
         End Sub
 
         <Test()>
+        Public Sub StringSetting()
+            Misc.LoadUserPreferences()
+            Assert.AreEqual("Symmetrical", Misc.StringSetting("ManiaKeyStyle"))
+        End Sub
+
+        <Test()>
+        Public Sub IntSetting()
+            Misc.LoadUserPreferences()
+            Assert.AreEqual(90, Misc.IntSetting("DimLevel"))
+        End Sub
+
+        <Test()>
+        Public Sub BoolSetting()
+            Misc.LoadUserPreferences()
+            Assert.IsFalse(Misc.BoolSetting("DisplayCityLocation"))
+        End Sub
+
+        <Test()>
         Public Sub GetUserName()
             Dim userName As String = Misc.GetUserName
             Assert.AreEqual("Kagu-chan", userName)
