@@ -9,7 +9,6 @@ osu!toolkit Documentation
 * [MapsetProvider](mapset/mapsetprovider)
 
 ###Beatmap
--------
 * [IBeatmap](beatmap/ibeatmap)
 * [BeatmapCatchTheBeat](beatmap/beatmapcatchthebeat)
 * [BeatmapMania](beatmap/beatmapmania)
