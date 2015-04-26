@@ -79,6 +79,12 @@ Namespace osutest
         End Sub
 
         <Test()>
+        Public Sub GetOsuUserProfileLink()
+            Dim link As String = Misc.GetOsuUserProfileLink
+            Assert.AreEqual("https://osu.ppy.sh/u/Kagu-chan", link)
+        End Sub
+
+        <Test()>
         Public Sub GetUserName()
             Dim userName As String = Misc.GetUserName
             Assert.AreEqual("Kagu-chan", userName)

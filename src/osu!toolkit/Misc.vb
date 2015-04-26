@@ -185,6 +185,18 @@ Namespace osutoolkit
         End Function
 
         ''' <summary>
+        ''' Returns users profile link. Only works if 'SaveUsername' is set to TRUE
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function GetOsuUserProfileLink() As String
+            LoadUserPreferences({"Username"})
+            Dim name As String = StringSetting("Username")
+            Dim link As New Uri(String.Format("https://osu.ppy.sh/u/{0}", name))
+            Return link.AbsoluteUri()
+        End Function
+
+        ''' <summary>
         ''' Returns users logon name (windows)
         ''' </summary>
         ''' <returns></returns>

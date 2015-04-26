@@ -82,6 +82,12 @@ Returns specific preloaded user preference as boolean or nothing.
 Dim autoCursorSizing As String = osutoolkit.Misc.BoolSetting("AutomaticCursorSizing")
 ```
 
+###Function GetOsuUserProfileLink (String)
+Returns users profile link. Only works if 'SaveUsername' is set to TRUE
+```
+Dim userLink As String = osutoolkit.Misc.GetOsuUserProfileLink()
+```
+
 ###Function GetUserName()
 Returns users logon name (windows)
 ```
