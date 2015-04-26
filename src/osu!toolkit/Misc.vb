@@ -117,9 +117,7 @@ Namespace osutoolkit
             Dim content As String = IO.File.ReadAllText(Path(fileName))
 
             For Each setting As String In settings
-                Dim pattern As String = String.Format("^{0}\s?=\s?(.+)$", setting)
-
-                Dim expression As New Regex(pattern, RegexOptions.Multiline Or RegexOptions.IgnoreCase)
+                Dim expression As New Regex(String.Format("^{0}\s?=\s?(.+)$", setting), RegexOptions.Multiline Or RegexOptions.IgnoreCase)
                 Dim result As Match = expression.Match(content)
                 If result.Success Then
                     UserPreferences(setting) = result.Groups(1).Value.Replace(Chr(13), vbNullString)
