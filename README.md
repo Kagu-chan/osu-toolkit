@@ -36,7 +36,7 @@ Please notify that you should build and then use the release output. Debug outpu
 
 Usage
 -----
-See [docs](docs) directory
+See [doc](doc) directory
 
 Requirements
 ------------
