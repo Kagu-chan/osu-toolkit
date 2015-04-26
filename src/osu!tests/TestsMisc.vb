@@ -67,6 +67,12 @@ Namespace osutest
         End Sub
 
         <Test()>
+        Public Sub DblSetting()
+            Misc.LoadUserPreferences()
+            Assert.AreEqual(0.5, Misc.DblSetting("CursorSize"))
+        End Sub
+
+        <Test()>
         Public Sub BoolSetting()
             Misc.LoadUserPreferences()
             Assert.IsFalse(Misc.BoolSetting("DisplayCityLocation"))

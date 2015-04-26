@@ -140,7 +140,7 @@ Namespace osutoolkit
         End Function
 
         ''' <summary>
-        ''' Returns specific preloaded user preference  as integer or nothing
+        ''' Returns specific preloaded user preference as integer or nothing
         ''' </summary>
         ''' <param name="key">setting to fetch</param>
         ''' <returns></returns>
@@ -149,6 +149,21 @@ Namespace osutoolkit
             Dim setting As String = StringSetting(key)
             If Not String.IsNullOrEmpty(setting) Then
                 Return CInt(setting)
+            End If
+
+            Return Nothing
+        End Function
+
+        ''' <summary>
+        ''' Returns specific preloaded user preference as double or nothing
+        ''' </summary>
+        ''' <param name="key">setting to fetch</param>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function DblSetting(ByVal key As String) As Double
+            Dim setting As String = StringSetting(key)
+            If Not String.IsNullOrEmpty(setting) Then
+                Return Convert.ToDouble(setting, New Globalization.CultureInfo("en-US"))
             End If
 
             Return Nothing
