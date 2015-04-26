@@ -18,6 +18,7 @@ osu!toolkit is full unit tested. For this there two projects:
 
 ###osu!tests
 This project is for unit tests. You can run tests using NUnit by opening project library. You have to build this project first.
+Please take care to modify tests to your current environtment since there strong depending on your settings (osu!) and beatmaps
 
 ###osu!integrationtests
 This projects is supposed to use for complex tests and - for example - benchmarking. It is a console application using the library. Just write your tests, build and run. 
