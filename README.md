@@ -48,6 +48,10 @@ License
 -------
 See [LICENSE](LICENSE) file
 
+Supported Projects
+------------------
+osu!toolkit will allow project support for projects working with this library. This means direct advertising in project list and support in development progress. For more details please refer [support](support).
+
 Want to help?
 -------------
 
