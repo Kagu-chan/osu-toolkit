@@ -9,7 +9,7 @@ Namespace osutoolkit
     ''' Represent Mode of osu!game
     ''' </summary>
     ''' <remarks></remarks>
-    Enum GameMode
+    Public Enum GameMode
         Undefined = -1
         Standard = 0
         Taiko = 1
@@ -21,7 +21,7 @@ Namespace osutoolkit
     ''' Represent sample type of hitsound addition or beatmap sampleset
     ''' </summary>
     ''' <remarks></remarks>
-    Enum SampleType
+    Public Enum SampleType
         None = -1
         Auto = 0
         Normal = 1
@@ -34,11 +34,21 @@ Namespace osutoolkit
     ''' </summary>
     ''' <remarks></remarks>
     <Flags()>
-    Enum Hitsound
+    Public Enum Hitsound
         None = 0
         Whistle = 2
         Finnish = 4
         Clap = 8
+    End Enum
+
+    ''' <summary>
+    ''' Represents a filter for MapsetProvider
+    ''' </summary>
+    ''' <remarks></remarks>
+    <Flags()>
+    Public Enum ProviderFilter
+        None = 0
+
     End Enum
 
 End Namespace

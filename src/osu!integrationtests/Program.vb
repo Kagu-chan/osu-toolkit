@@ -1,7 +1,11 @@
-﻿Module Program
+﻿Imports osutoolkit
+
+Module Program
 
     Sub Main()
-        'NOP
+        Misc.LoadUserPreferences()
+        Console.WriteLine(Misc.OsuPath)
+        Console.ReadLine()
     End Sub
 
 End Module
