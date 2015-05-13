@@ -3,7 +3,7 @@ osu!toolkit Support
 
 osu!toolkit allow direct support for projects using this library. This means advertising of this projects and code support if required.
 
-A list of supported projects you can view [here](LIST).
+A list of supported projects you can view [here](LIST.md).
 
 How does it works?
 ------------------
