@@ -2,7 +2,7 @@ osu!toolkit supported projects
 ==============================
 
 ###Projects List
-* [osu!song-grabber](#osu-song-grabber)
+* [osu!song-grabber](#osusong-grabber)
 
 ###Projects Description
 osu!song-grabber
