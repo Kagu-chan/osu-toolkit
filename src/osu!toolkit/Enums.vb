@@ -48,7 +48,10 @@ Namespace osutoolkit
     <Flags()>
     Public Enum ProviderFilter
         None = 0
-
+        Difficulty = 1
+        AudioFilename = 2
+        Title = 4
+        Artist = 8
     End Enum
 
 End Namespace

@@ -3,8 +3,7 @@
 Module Program
 
     Sub Main()
-        Misc.LoadUserPreferences()
-        Console.WriteLine(Misc.OsuPath)
+        MapsetProvider.PrepareSpecific(ProviderFilter.AudioFilename)
         Console.ReadLine()
     End Sub
 
