@@ -14,6 +14,7 @@ If you want to use this library, this would make me happy, and so I decided to s
 * Your project must be written in C# or .NET
 * Your project must be hosted and up to date on github
 * You have to use clean code
+* If your project not ready to use and is in development, this is not a problem. But if I see project inactive for long time (before finish) I will stop support.
 
 If this applies, I will provide my help:
 
@@ -25,4 +26,8 @@ If this applies, I will provide my help:
 If you want this help, 
 
 * Host your project
-* Create an issue ticket with project details
+* Create an issue ticket and provide following information:
+* Description
+* One lined description for list page
+* Github-Link
+* Osu-Forums-Link
