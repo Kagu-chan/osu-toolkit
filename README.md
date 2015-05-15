@@ -58,9 +58,9 @@ If you find an issue in my code or want to share some useful additions for the l
 
 If it is doable and if it fits the library and coding style maybe it will get included.
 
-Help
-----
-Please post your issue if you need some help.
+Help and Ideas
+---------------
+Please post your issue if you need some help or post your idea if I should add something useful.
 
 See also
 --------
