@@ -20,3 +20,11 @@ This is a flags enum (bitmask)!
 ```
 Dim hitsound As Hitsound = osutoolkit.Hitsound.Whiste Or osutoolkit.Hitsound.Finnish
 ```
+
+###Enum ProviderFilter
+Represents a filter for MapsetProvider
+
+This is a flags enum (bitmask)!
+```
+Dim filter As ProviderFilter = osutoolkit.ProviderFilter.None
+```
